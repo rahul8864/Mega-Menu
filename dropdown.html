@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@600&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    * {
+
+      font-family:Lato;
+    }
+    .first-container {
+      <!-- display:none; -->
+      position:absolute;
+      box-sizing: border-box;
+      padding-top:10px;
+    }
+    .inside-container {
+      display:block;
+      position:relative;
+      width:250px;
+    }
+    .menu-Item {
+      box-sizing:border-box;
+      width:100%;
+      border:1px solid #ddd;
+      background: #fff;
+      box-shadow: 0px 5px 10px rgba(0,0,0,0.08);
+      max-height:50vh;
+      overflow-y: scroll;
+      padding:10px 15px;
+      font-weight:600;
+      font-Size:14px;
+      font-family: 'Lato', sans-serif;
+      <!-- font-family:Lato; -->
+      border-radius:5px;
+    }
+    .menu-Item li{
+      display:block;
+      box-sizing:border-box;
+      padding:10px 15px;
+    }
+    .menu-Item li:hover {
+        background: #eee;
+        padding:10px 15px;
+        border-radius:5px;
+    }
+
+::-webkit-scrollbar {
+  width: 2px;
+  border-radius:50px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 50px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f3f3f3;
+}
+.item_inside {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+}
+.icon-icon {
+  margin-left:10px
+}
+.menu-panel {
+  box-sizing: border-box;
+  position:absolute;
+  left:101%;
+  top:0;
+  border:1px solid #ddd;
+  <!-- padding:30px; -->
+  border:1px solid #ddd;
+  width:300px;
+  background: #fff;
+  <!-- margin-left:-1px; -->
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.08);
+  border-radius:2px;
+  max-height:50vh;
+  overflow-y:scroll;
+}
+.menu-Item-Panel {
+  <!-- background:red; -->
+  height:100%;
+  list-style:none;
+  padding:10px 10px;
+}
+.header-name {
+  padding-left: 20px
+}
+.headerText {
+  margin-left: 14px
+}
+.description {
+  font-size:14px;
+  opacity:0.5;
+  margin-left:14px;
+  padding-top:5px;
+}
+.headerBold {
+  font-weight:600;
+  font-size:15px;
+}
+.header-Tile {
+  display:flex;
+  align-items:center;
+  padding:10px;
+}
+.menu-Item-Panel li:hover {
+    background: #eee;
+    padding:0;
+    border-radius:5px;
+}
+  </style>
+</head>
+<body>
+  <h1>Hello</h1>
+  <button>Click</button>
+  <div class="first-container">
+    <div class="inside-container">
+    <ul class="menu-Item">
+      <li>Recently Visited</li>
+      <li>Favorites</li>
+      <hr/>
+      <li>
+        <div class="item_inside">
+        <div><i class="fa-solid fa-house"></i>
+          <span class="icon-icon">Home<span>
+          </div>
+        <i class="fa-solid fa-angle-right"></i>
+      </div>
+      </li>
+      <li>Operations</li>
+      <li>Work Orders</li>
+      <li>Asset Managment</li>
+      <li>WildLife</li>
+      <li>Lease Managment</li>
+      <li>FBO</li>
+      <li>Training Managment</li>
+      <li>FOD Log</li>
+      <li>Forms</li>
+      <li>Noise Managment</li>
+      <li>SMS</li>
+      <li>Inspections</li>
+      <li>Gate Managment</li>
+      <li>Reports</li>
+      <li>SEDIS</li>
+      <li>TODO</li>
+      <li>Shift Managment</li>
+      <li>Airfield Work Orders</li>
+      <li>Non Airfield Work Orders</li>
+    </ul>
+    <div class="menu-panel">
+      <div class="menu-panel-expand">
+        <h4 class="header-name">
+          <i class="fa-solid fa-house"></i>
+          <span class="headerText">Home</span>
+        </h4>
+      <ul class="menu-Item-Panel">
+        <li>
+          <div class="header-name header-Tile">
+          <i class="fa-regular fa-star"></i>
+          <div>
+          <span class="headerText headerBold">Sweet Home</span>
+          <div class="description">Hello Im Here</div>
+          </div>
+          <div>
+        </li>
+        <li>
+          <div class="header-name header-Tile">
+          <i class="fa-regular fa-star"></i>
+          <div>
+          <span class="headerText headerBold">Sweet Home</span>
+          <div class="description">Hello Im Here</div>
+          </div>
+          <div>
+        </li>
+        <li>
+          <div class="header-name header-Tile">
+          <i class="fa-regular fa-star"></i>
+          <div>
+          <span class="headerText headerBold">Sweet Home</span>
+          <div class="description">Hello Im Here</div>
+          </div>
+          <div>
+        </li>
+        <li>
+          <div class="header-name header-Tile">
+          <i class="fa-regular fa-star"></i>
+          <div>
+          <span class="headerText headerBold">Sweet Home</span>
+          <div class="description">Hello Im Here</div>
+          </div>
+          <div>
+        </li>
+        <li>
+          <div class="header-name header-Tile">
+          <i class="fa-regular fa-star"></i>
+          <div>
+          <span class="headerText headerBold">Sweet Home</span>
+          <div class="description">Hello Im Here</div>
+          </div>
+          <div>
+        </li>
+        <li>
+          <div class="header-name header-Tile">
+          <i class="fa-regular fa-star"></i>
+          <div>
+          <span class="headerText headerBold">Sweet Home</span>
+          <div class="description">Hello Im Here</div>
+          </div>
+          <div>
+        </li>
+        <li>
+          <div class="header-name header-Tile">
+          <i class="fa-regular fa-star"></i>
+          <div>
+          <span class="headerText headerBold">Sweet Home</span>
+          <div class="description">Hello Im Here</div>
+          </div>
+          <div>
+        </li>
+        <li>
+          <div class="header-name header-Tile">
+          <i class="fa-regular fa-star"></i>
+          <div>
+          <span class="headerText headerBold">Sweet Home</span>
+          <div class="description">Hello Im Here</div>
+          </div>
+          <div>
+        </li>
+        <li>
+          <div class="header-name header-Tile">
+          <i class="fa-regular fa-star"></i>
+          <div>
+          <span class="headerText headerBold">Sweet Home</span>
+          <div class="description">Hello Im Here</div>
+          </div>
+          <div>
+        </li>
+        <li>
+          <div class="header-name header-Tile">
+          <i class="fa-regular fa-star"></i>
+          <div>
+          <span class="headerText headerBold">Sweet Home</span>
+          <div class="description">Hello Im Here</div>
+          </div>
+          <div>
+        </li>
+        <li>
+          <div class="header-name header-Tile">
+          <i class="fa-regular fa-star"></i>
+          <div>
+          <span class="headerText headerBold">Sweet Home</span>
+          <div class="description">Hello Im Here</div>
+          </div>
+          <div>
+        </li>
+        <li>
+          <div class="header-name header-Tile">
+          <i class="fa-regular fa-star"></i>
+          <div>
+          <span class="headerText headerBold">Sweet Home</span>
+          <div class="description">Hello Im Here</div>
+          </div>
+          <div>
+        </li>
+      </ul>
+      </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
