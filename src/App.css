@@ -1,0 +1,115 @@
+* {
+  font-family: Lato;
+  user-select: none;
+  cursor: pointer;
+}
+.first-container {
+  position: absolute;
+  box-sizing: border-box;
+  padding-top: 10px;
+}
+.inside-container {
+  display: block;
+  position: relative;
+  width: 250px;
+}
+.menu-Item {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #ddd;
+  background: #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
+  max-height: 50vh;
+  overflow-y: scroll;
+  padding: 10px 15px;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  border-radius: 5px;
+}
+.menu-Item li {
+  display: block;
+  box-sizing: border-box;
+  padding: 10px 15px;
+}
+.menu-Item li:hover {
+  background: #eee;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  border-radius: 50px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 50px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f3f3f3;
+}
+.item_inside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon-icon {
+  margin-left: 10px;
+}
+.menu-panel {
+  box-sizing: border-box;
+  position: absolute;
+  left: 101%;
+  top: 0;
+  border: 1px solid #ddd;
+  border: 1px solid #ddd;
+  width: 300px;
+  background: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+.menu-Item-Panel {
+  height: 100%;
+  list-style: none;
+  padding: 10px 10px;
+}
+.header-name {
+  padding-left: 20px;
+}
+.headerText {
+  margin-left: 14px;
+}
+.description {
+  font-size: 14px;
+  opacity: 0.5;
+  margin-left: 14px;
+  padding-top: 5px;
+}
+.headerBold {
+  font-weight: 600;
+  font-size: 15px;
+}
+.header-Tile {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.menu-Item-Panel li:hover {
+  background: #eee;
+  padding: 0;
+  border-radius: 5px;
+}
